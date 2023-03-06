@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.dematic.wms</groupId>
+        <artifactId>wms-parent</artifactId>
+        <version>DiQ22.2.0-HF2</version>
+    </parent>
+
+    <groupId>com.dematic.amr</groupId>
+    <artifactId>amr</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <scm>
+        <connection>scm:git:https://gitlab.dematic.com/PATH_TO_YOUR_GIT_PROJECT.git</connection>
+    </scm>
+
+    <properties>
+        <!-- never change manually => use maven command as described in README.md -->
+        <wms.version>DiQ22.2.0-HF2</wms.version>
+    </properties>
+
+  <modules>
+    <module>amr-base</module>
+    <module>amr-client</module>
+    <module>amr-rest</module>
+    <module>amr-shared</module>
+    <module>amr-war</module>
+  </modules>
+</project>
